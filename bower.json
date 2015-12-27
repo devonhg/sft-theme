@@ -1,0 +1,23 @@
+{
+  "name": "sft-theme",
+  "version": "0.0.0",
+  "homepage": "https://github.com/devonhg/sft-theme",
+  "authors": [
+    "devonhg <devon.hugh.godfrey@gmail.com>"
+  ],
+  "description": "Theme for South Flint Tabernacle",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.6"
+  }
+}
