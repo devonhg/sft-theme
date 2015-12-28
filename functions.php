@@ -127,6 +127,16 @@ function _s_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'Slider Sidebar', '_s' ),
+		'id'            => 'slider-sidebar',
+		'description'   => 'This widget area for sliders/Big images.',
+		'before_widget' => '<aside class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Lower Sidebar', '_s' ),
 		'id'            => 'lower-sidebar',
 		'description'   => 'This widget area is below the content.',

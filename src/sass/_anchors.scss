@@ -1,0 +1,45 @@
+//Header Anchors
+	.top-design-banner{
+		@extend %obj-top-repeatable-design; 
+	}
+
+	.site-branding{
+		@extend %obj-site-header; 
+	}
+
+	#site-navigation{
+		@extend %obj-site-navigation;
+	}
+
+	.slider-sidebar{
+		@extend %obj-slider-wa;
+	}
+
+	.learn-more{
+		@extend %obj-learn-more;
+	}
+
+	body{
+		@extend %obj-body;
+	}
+
+	#secondary{
+		@extend %obj-sidebar;
+		@extend %default-html-properties;
+	}
+
+	.search-form{
+		@extend %site-search-form; 
+	}
+
+	#primary{
+		@extend %obj-content-area;
+	}
+
+	.sidebar-footer{
+		@extend %obj-footer-area;
+	}
+
+	#content{
+		margin-bottom: 20px; 
+	}

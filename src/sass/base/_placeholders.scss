@@ -1,0 +1,81 @@
+//Header Area
+	%default-button-properties{
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		button:active,
+		button:hover{
+			background-color: $col-primary; 
+			padding: 5px; 
+			color: #fff;
+			@include font-size( 20px );
+		}
+	}
+
+
+	%default-html-properties{
+		h1{ @include font-size( $html-size-h1 ); }
+		h2{ @include font-size( $html-size-h2 ); }
+		h3{ @include font-size( $html-size-h3 ); }
+		h4{ @include font-size( $html-size-h4 ); }
+		h5{ @include font-size( $html-size-h5 ); }
+		h6{ @include font-size( $html-size-h6 ); }
+		h1,h2,h3,
+		h4,h5,h6{
+			font-family: $font-primary; 
+		}
+		p{ @include font-size( $html-size-p ); }
+		font-size: $html-default-size;
+		font-family: $font-secondary;
+
+		@extend %default-button-properties;
+	}
+
+	%sft-typical-panel{
+		@extend %sft-panel-padding; 
+	}
+
+	%sft-purple-box{
+		background-color: $col-primary;
+		border: 5px solid white; 
+		@include rounded(); 
+		@include box-shadow( 0px, 0px, 15px, #333 );	
+		@extend %sft-typical-panel;
+
+		color: #fff; 
+
+		a{
+			color: $col-secondary; 
+		}
+
+		@include bp-medium{
+			@include rounded( 0 ); 
+			border: 3px solid white; 
+		}
+	}
+
+	%sft-white-box{
+		background-color: rgba(255,255,255, .9);	
+		@extend %sft-typical-panel;
+		border-radius: 3px; 
+
+		a{
+			color: $col-secondary; 
+		}
+
+		@include bp-medium{
+			@include rounded( 0 ); 
+		}		
+	}
+
+	%sft-panel-padding{
+		padding: $css-padding-full;
+
+		@include bp-medium{
+			padding: $css-padding-med;
+		}
+		@include bp-small{
+			padding: $css-padding-sm; 
+		}
+	}

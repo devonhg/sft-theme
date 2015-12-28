@@ -1,0 +1,210 @@
+/*
+	In this file goes objects or groups of designs that arent as
+	repeatable as placeholders. 
+*/
+
+	%obj-body{
+		@extend %default-html-properties;
+		background-image: url('../images/bottom_shape.jpg'); 
+		background-size: 100% auto; 
+		background-repeat: no-repeat; 
+		background-position: bottom; 
+	}
+
+	%obj-top-repeatable-design{
+		height: 80px; 
+		background-image: url('../images/top_shape.jpg');
+		background-repeat: repeat-x; 
+		background-position: top; 
+		width: 100%; 
+
+		border-bottom: 10px solid #fff; 
+
+		@include box-shadow( 0px, 5px, 20px, #333 );
+
+		@include bp-small{
+			height: 40px; 
+		}
+	}
+
+	%obj-site-header{
+		@extend %sft-purple-box;
+		@extend %clearfix; 
+
+		margin-top: -40px; 
+		//width: 70%; 
+		margin-left: auto; 
+		margin-right: auto; 
+
+		text-shadow: 3px 3px 5px rgba(0, 0, 0, .9);
+		
+		@include container; 
+
+		.site-info{
+			@include span( 10 last);
+			text-align: center; 
+			.site-title a{
+				font-family: $font-primary;
+				color: #fff; 
+				@include font-size(80px);
+				&:hover{
+					text-decoration: none; 
+				}
+			}
+			.site-description{
+				font-family: $font-secondary; 
+			}
+		}
+
+		.site-logo{
+			@include span(isolate 150px at 0%);
+			margin-top: -40px;
+		}
+
+		@include bp-small{
+			@include span( 12 );
+			margin-top: -10px; 
+			text-align: center; 
+
+			.site-logo{
+				display: none; 
+				width: 0;
+			}
+			.site-info{
+				@include span( 12 );
+				.site-title a{
+					@include font-size(60px);
+				}.site-description {
+					@include font-size(40px);
+				} 
+			}
+			
+		}
+
+	}
+
+	%obj-site-navigation{
+		//width: 70%;
+		margin: 0 auto; 
+		float: none; 
+
+		.menu-main-menu-container{
+			text-align: center; 
+			line-height:30px;
+			
+			li{
+		        display:inline-block;
+		        float: none; 
+		    	
+
+		        padding: 8px; 
+		        font-family: $font-primary; 
+		        text-transform: uppercase; 
+		        @include font-size(30px);
+
+
+		        a{ 
+		        	display: inline-block; 
+					color: #000;
+					@include transition(all .3s ease);
+					&:hover{
+						color: $col-secondary;  
+					}					
+		        }
+			}
+		}
+
+		button{
+			padding: 15px;
+			width: 100%; 
+			@include font-size( 30px );
+			text-transform: uppercase; 
+			background-color: $col-secondary; 
+			color: #fff; 
+		}
+
+		@include bp-medium{
+			li{
+				display: block !important; 
+				background-color: lighten($col-secondary, 50%);
+				padding: 0 !important; 
+				a{ 
+					display: block; 
+					padding: 8px;
+					width: 100%; 
+				}
+			}li:hover{
+				background-color: lighten($col-secondary, 25%);
+			}
+		}
+
+		@extend %clearfix; 
+	}
+
+	%obj-slider-wa{
+		@include container; 
+
+		@include bp-small{
+			display: none; 
+		}
+	}
+
+	%obj-learn-more{
+		@extend %sft-purple-box;
+		padding: 5px; 
+		border-left: 0;
+		border-right: 0; 
+		border-radius: 0; 
+		border-width: 2px; 
+		text-align: right; 
+		h1{
+			margin: 0px; 
+		}
+	}
+
+	%obj-sidebar{
+		@extend %sft-purple-box; 
+		background-color: rgba( $col-secondary, .3 );
+		color: $col-grey;
+		h1{
+			text-decoration: underline; 
+		}
+
+		@include bp-medium{
+			text-align: center; 
+		}
+	}
+
+	%site-search-form{
+		label,
+		input{
+			width: 100%;
+			margin: 0px; 
+			box-sizing: border-box;
+			border-radius: 0; 
+			text-align: center; 
+		}
+	}
+
+	%obj-content-area{
+		@extend %sft-white-box; 
+		.entry-title{
+			font-style: italic; 
+			color: $col-primary; 
+		}
+	}
+
+	%obj-footer-area{
+		@extend %sft-purple-box;
+
+		.sidebar-footer{
+			@include container;
+			aside{
+				@include span( 4 );
+			}
+		}
+
+		@include bp-medium{
+			text-align: center; 
+		}
+	}

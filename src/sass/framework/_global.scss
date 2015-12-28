@@ -1,0 +1,32 @@
+/*
+	Global structure 
+*/
+img{
+	width: 100%;
+	height: auto; 
+}
+
+#masthead{
+	@include container; 
+}
+
+#content{
+	@include container; 
+	#primary{
+		@include span(8 last);
+	}
+	#secondary{
+		@include span(4);
+	}
+
+	@include bp-medium{
+		#primary,
+		#secondary{
+			@include span(12);
+		}
+	}
+}
+
+#colophon{
+	@include container; 
+}

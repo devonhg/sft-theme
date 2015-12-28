@@ -1,0 +1,34 @@
+/********************
+* Site Colors
+********************/
+	$col-purple : #5f3895;
+	$col-blue : #017ed8;
+	$col-grey : #222; 
+
+	$col-primary : $col-purple; 
+	$col-secondary : $col-blue; 
+	$col-tertiary : $col-grey; 
+
+	$col-link-primary : $col-purple;
+	$col-link-secondary : $col-blue;
+	$col-link-tertiary : $col-grey; 
+
+/*************************
+* Global HTML Properties
+*************************/
+	$font-primary : "Comic Sans MS", cursive, sans-serif; 
+	$font-secondary : "Courier New", Courier, monospace;
+
+	$css-padding-full : 15px; 
+	$css-padding-med : 10px; 
+	$css-padding-sm: 5px; 
+
+	$html-size-h1 : 40px;
+	$html-size-h2 : 36px;
+	$html-size-h3 : 28px;
+	$html-size-h4 : 20px;
+	$html-size-h5 : 16px;
+	$html-size-h6 : 14px;
+
+	$html-size-p : 20px;
+	$html-default-size: $html-size-p;
