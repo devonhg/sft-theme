@@ -43,3 +43,7 @@
 	#colophon .site-info{
 		@extend %obj-disclaimer;
 	}
+
+	.scroll-link{
+		@extend %sft-button;
+	}
