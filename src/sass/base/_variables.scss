@@ -16,8 +16,9 @@
 /*************************
 * Global HTML Properties
 *************************/
-	$font-primary : "Comic Sans MS", cursive, sans-serif; 
-	$font-secondary : "Courier New", Courier, monospace;
+	$font-primary : "Times New Roman", Times, serif;//"Comic Sans MS", cursive, sans-serif; 
+	$font-secondary : LTZapfino One;//"Courier New", Courier, monospace;
+	$font-tertiary : 'Trajan Pro bold';
 
 	$css-padding-full : 15px; 
 	$css-padding-med : 10px; 
@@ -32,3 +33,5 @@
 
 	$html-size-p : 20px;
 	$html-default-size: $html-size-p;
+
+	$panel-radius: 4px; 

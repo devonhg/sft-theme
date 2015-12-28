@@ -47,12 +47,14 @@
 				font-family: $font-primary;
 				color: #fff; 
 				@include font-size(80px);
-				&:hover{
+				&:hover,
+				&:active{
 					text-decoration: none; 
 				}
 			}
 			.site-description{
 				font-family: $font-secondary; 
+				@include font-size(80px);
 			}
 		}
 
@@ -97,16 +99,17 @@
 		        float: none; 
 		    	
 
-		        padding: 8px; 
+		        padding: 8px 12px; 
 		        font-family: $font-primary; 
 		        text-transform: uppercase; 
-		        @include font-size(30px);
+		        @include font-size(28px);
 
 
 		        a{ 
 		        	display: inline-block; 
 					color: #000;
 					@include transition(all .3s ease);
+					font-family: $font-tertiary; 
 					&:hover{
 						color: $col-secondary;  
 					}					
@@ -135,6 +138,7 @@
 				}
 			}li:hover{
 				background-color: lighten($col-secondary, 25%);
+				a{ color: $col-primary!important; }
 			}
 		}
 
@@ -157,22 +161,28 @@
 		border-radius: 0; 
 		border-width: 2px; 
 		text-align: right; 
+		
 		h1{
 			margin: 0px; 
+			font-family: $font-secondary;
+			@include font-size(80px);
+			height: 35px; 
+			margin-right: 10px; 
+			margin-top: -10px; 
 		}
 	}
 
 	%obj-sidebar{
 		@extend %sft-purple-box; 
-		background-color: rgba( $col-secondary, .3 );
+		$_opacity : .7; 
+		background-color: lighten( desaturate( rgba( $col-secondary, $_opacity ), 60% ), 30%);
+		border: 3px solid rgba( white, $_opacity ); 
 		color: $col-grey;
 		h1{
 			text-decoration: underline; 
 		}
 
-		@include bp-medium{
-			text-align: center; 
-		}
+		@extend %sft-mobile-text;
 	}
 
 	%site-search-form{
@@ -196,15 +206,35 @@
 
 	%obj-footer-area{
 		@extend %sft-purple-box;
+		margin-top: 30px; 
 
-		.sidebar-footer{
-			@include container;
-			aside{
-				@include span( 4 );
+		h1{
+			font-family: $font-tertiary; 
+			@include font-size(26px);
+			text-transform: uppercase; 
+		}
+
+		@include container;
+		.widget{
+			@include span( 3 );
+			&:last-child{
+				margin-right: 0; 
 			}
+
+			@include bp-medium{
+				@include span(12);
+			}
+			
 		}
 
-		@include bp-medium{
-			text-align: center; 
-		}
+
+		@extend %sft-mobile-text;
+	}
+
+	%obj-disclaimer{
+		text-align: center; 
+		background-color: #fff; 
+		margin-top: 8px; 
+		padding-bottom: 5px; 
+		@include rounded(3px); 
 	}

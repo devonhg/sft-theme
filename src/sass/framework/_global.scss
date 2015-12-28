@@ -15,6 +15,9 @@ img{
 	#primary{
 		@include span(8 last);
 	}
+	#primary.full{
+		@include span(12);
+	}
 	#secondary{
 		@include span(4);
 	}

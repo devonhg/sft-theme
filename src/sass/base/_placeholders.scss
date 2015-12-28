@@ -27,19 +27,19 @@
 		}
 		p{ @include font-size( $html-size-p ); }
 		font-size: $html-default-size;
-		font-family: $font-secondary;
+		//font-family: $font-secondary;
 
 		@extend %default-button-properties;
 	}
 
 	%sft-typical-panel{
-		@extend %sft-panel-padding; 
+		@extend %sft-panel-padding;
+		@include rounded($panel-radius);  
 	}
 
 	%sft-purple-box{
 		background-color: $col-primary;
 		border: 5px solid white; 
-		@include rounded(); 
 		@include box-shadow( 0px, 0px, 15px, #333 );	
 		@extend %sft-typical-panel;
 
@@ -77,5 +77,11 @@
 		}
 		@include bp-small{
 			padding: $css-padding-sm; 
+		}
+	}
+
+	%sft-mobile-text{
+		@include bp-medium{
+			text-align: center; 
 		}
 	}
