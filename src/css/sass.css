@@ -855,7 +855,7 @@ html {
   .learn-more a {
     color: #fff; }
     .learn-more a:hover, .learn-more a:active, .learn-more a:focus {
-      text-decoration: none; }
+      text-decoration: none !important; }
 
 #secondary {
   background-color: rgba(158, 189, 212, 0.7);
