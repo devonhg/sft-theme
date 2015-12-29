@@ -6,9 +6,10 @@
 	%obj-body{
 		@extend %default-html-properties;
 		background-image: url('../images/bottom_shape.jpg'); 
-		background-size: 100% auto; 
+		background-size: 100% 300px; 
 		background-repeat: no-repeat; 
 		background-position: bottom; 
+		height: 100%; 
 	}
 
 	%obj-top-repeatable-design{
