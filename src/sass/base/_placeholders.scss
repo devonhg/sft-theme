@@ -35,6 +35,12 @@
 	%sft-typical-panel{
 		@extend %sft-panel-padding;
 		@include rounded($panel-radius);  
+		.wp-post-image{
+			margin-bottom: 15px; 
+		}
+		.entry-title{
+			@include font-size(60px); 
+		}
 	}
 
 	%sft-purple-box{
@@ -99,5 +105,10 @@
 			&:focus{
 				text-decoration: none; 
 			} 
+		}
+
+		@include bp-medium{
+			width: 100%; 
+			text-align: center; 
 		}
 	}

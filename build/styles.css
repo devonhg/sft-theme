@@ -584,6 +584,11 @@ body, #secondary {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+  .scroll-link .wp-post-image, .site-branding .wp-post-image, .learn-more .wp-post-image, #secondary .wp-post-image, .sidebar-footer .wp-post-image, #primary .wp-post-image {
+    margin-bottom: 15px; }
+  .scroll-link .entry-title, .site-branding .entry-title, .learn-more .entry-title, #secondary .entry-title, .sidebar-footer .entry-title, #primary .entry-title {
+    font-size: 60px;
+    font-size: 3.75rem; }
 
 .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer {
   background-color: #5f3895;
@@ -634,6 +639,10 @@ body, #secondary {
     color: #fff !important; }
     .scroll-link a:hover, .scroll-link a:active, .scroll-link a:focus {
       text-decoration: none; }
+  @media only screen and (max-width: 40em) {
+    .scroll-link {
+      width: 100%;
+      text-align: center; } }
 
 /***********************
 * Framework
