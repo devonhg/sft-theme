@@ -853,7 +853,8 @@ html {
     margin-top: -10px;
     line-height: 1.1; }
   .learn-more a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none !important; }
     .learn-more a:hover, .learn-more a:active, .learn-more a:focus {
       text-decoration: none !important; }
 
