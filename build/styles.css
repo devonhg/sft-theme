@@ -742,12 +742,15 @@ body {
     .site-branding .site-info .site-title a {
       font-family: "Times New Roman", Times, serif;
       color: #fff;
-      font-size: 50px; }
+      font-size: 50px;
+      text-decoration: none; }
       .site-branding .site-info .site-title a:hover, .site-branding .site-info .site-title a:active {
         text-decoration: none; }
     .site-branding .site-info .site-description {
       font-family: LTZapfino One;
-      font-size: 50px; }
+      font-size: 50px;
+      margin-top: 20px;
+      margin-bottom: 10px; }
   .site-branding .site-logo {
     width: 150px;
     float: left;

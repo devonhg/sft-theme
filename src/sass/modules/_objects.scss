@@ -47,6 +47,7 @@
 				font-family: $font-primary;
 				color: #fff; 
 				@include font-size(50px);
+				text-decoration: none; 
 				&:hover,
 				&:active{
 					text-decoration: none; 
@@ -55,6 +56,8 @@
 			.site-description{
 				font-family: $font-secondary; 
 				@include font-size(50px);
+				margin-top: 20px;
+				margin-bottom: 10px; 
 			}
 		}
 
