@@ -43,7 +43,7 @@
 		.site-info{
 			@include span( 10 last);
 			text-align: center; 
-			.site-title{ margin: 0; }
+			.site-title{ margin: 0px; }
 			.site-title a{
 				font-family: $font-primary;
 				color: #fff; 
@@ -57,7 +57,7 @@
 			.site-description{
 				font-family: $font-secondary; 
 				@include font-size(50px);
-				margin: 0; 
+				margin: 0px; 
 			}
 		}
 

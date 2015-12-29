@@ -571,7 +571,8 @@ body, #secondary {
   body h1, #secondary h1, body h2, #secondary h2, body h3, #secondary h3,
   body h4,
   #secondary h4, body h5, #secondary h5, body h6, #secondary h6 {
-    font-family: "Times New Roman", Times, serif; }
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal; }
   body p, #secondary p {
     font-size: 12px; }
 
@@ -740,7 +741,7 @@ body {
     margin-right: 0;
     text-align: center; }
     .site-branding .site-info .site-title {
-      margin: 0; }
+      margin: 0px; }
     .site-branding .site-info .site-title a {
       font-family: "Times New Roman", Times, serif;
       color: #fff;
@@ -751,7 +752,7 @@ body {
     .site-branding .site-info .site-description {
       font-family: LTZapfino One;
       font-size: 50px;
-      margin: 0; }
+      margin: 0px; }
   .site-branding .site-logo {
     width: 150px;
     float: left;
