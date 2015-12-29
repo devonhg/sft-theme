@@ -515,12 +515,12 @@ Usage
 /***********************
 * Clearfix
 ***********************/
-.site-branding, #site-navigation {
+body, html, .site-branding, #site-navigation {
   *zoom: 1; }
-  .site-branding:before, #site-navigation:before, .site-branding:after, #site-navigation:after {
+  body:before, html:before, .site-branding:before, #site-navigation:before, body:after, html:after, .site-branding:after, #site-navigation:after {
     content: " ";
     display: table; }
-  .site-branding:after, #site-navigation:after {
+  body:after, html:after, .site-branding:after, #site-navigation:after {
     clear: both; }
 
 /*
@@ -714,7 +714,7 @@ body, html {
   background-size: 100% 300px;
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 100%; }
+  min-height: 100%; }
 
 .top-design-banner {
   height: 80px;
