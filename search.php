@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<?php sft_primary_div(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php

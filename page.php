@@ -14,11 +14,7 @@
 
 get_header(); ?>
 	
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
-		<div id="primary" class="content-area">
-	<?php } else { ?>
-		<div id="primary" class="content-area full">
-	<?php } ?>
+	<?php sft_primary_div(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php
 

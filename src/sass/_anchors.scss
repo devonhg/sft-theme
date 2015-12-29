@@ -19,8 +19,10 @@
 		@extend %obj-learn-more;
 	}
 
-	body,html{
+	html{
 		@extend %obj-body;
+	}body{
+		background: transparent; 
 	}
 
 	#secondary{

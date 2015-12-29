@@ -202,3 +202,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+function sft_primary_div(){
+	if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+		<div id="primary" class="content-area">
+	<?php } else { ?>
+		<div id="primary" class="content-area full">
+	<?php } 
+}

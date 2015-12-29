@@ -515,12 +515,12 @@ Usage
 /***********************
 * Clearfix
 ***********************/
-body, html, .site-branding, #site-navigation {
+html, .site-branding, #site-navigation {
   *zoom: 1; }
-  body:before, html:before, .site-branding:before, #site-navigation:before, body:after, html:after, .site-branding:after, #site-navigation:after {
+  html:before, .site-branding:before, #site-navigation:before, html:after, .site-branding:after, #site-navigation:after {
     content: " ";
     display: table; }
-  body:after, html:after, .site-branding:after, #site-navigation:after {
+  html:after, .site-branding:after, #site-navigation:after {
     clear: both; }
 
 /*
@@ -538,20 +538,15 @@ Usage
 /*
 	20 = 12
 */
-body input[type="submit"], html input[type="submit"], #secondary input[type="submit"],
-body input[type="reset"],
+html input[type="submit"], #secondary input[type="submit"],
 html input[type="reset"],
 #secondary input[type="reset"],
-body input[type="button"],
 html input[type="button"],
 #secondary input[type="button"],
-body button,
 html button,
 #secondary button,
-body button:active,
 html button:active,
 #secondary button:active,
-body button:hover,
 html button:hover,
 #secondary button:hover {
   background-color: #5f3895;
@@ -559,27 +554,26 @@ html button:hover,
   color: #fff;
   font-size: 12px; }
 
-body, html, #secondary {
+html, #secondary {
   font-size: 12px; }
-  body h1, html h1, #secondary h1 {
+  html h1, #secondary h1 {
     font-size: 25px; }
-  body h2, html h2, #secondary h2 {
+  html h2, #secondary h2 {
     font-size: 22.5px; }
-  body h3, html h3, #secondary h3 {
+  html h3, #secondary h3 {
     font-size: 17.5px; }
-  body h4, html h4, #secondary h4 {
+  html h4, #secondary h4 {
     font-size: 12px; }
-  body h5, html h5, #secondary h5 {
+  html h5, #secondary h5 {
     font-size: 10px; }
-  body h6, html h6, #secondary h6 {
+  html h6, #secondary h6 {
     font-size: 8.75px; }
-  body h1, html h1, #secondary h1, body h2, html h2, #secondary h2, body h3, html h3, #secondary h3,
-  body h4,
+  html h1, #secondary h1, html h2, #secondary h2, html h3, #secondary h3,
   html h4,
-  #secondary h4, body h5, html h5, #secondary h5, body h6, html h6, #secondary h6 {
+  #secondary h4, html h5, #secondary h5, html h6, #secondary h6 {
     font-family: "Times New Roman", Times, serif;
     font-weight: normal; }
-  body p, html p, #secondary p {
+  html p, #secondary p {
     font-size: 12px; }
 
 .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer, #primary {
@@ -709,7 +703,7 @@ img {
 	In this file goes objects or groups of designs that arent as
 	repeatable as placeholders. 
 */
-body, html {
+html {
   background-image: url("../images/bottom_shape.jpg");
   background-size: 100% 300px;
   background-repeat: no-repeat;
@@ -930,5 +924,7 @@ a {
 /**********************
 * General
 **********************/
+body {
+  background: transparent; }
 
 /*# sourceMappingURL=sass.css.map */
