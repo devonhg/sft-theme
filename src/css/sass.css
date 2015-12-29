@@ -739,6 +739,8 @@ body {
     float: right;
     margin-right: 0;
     text-align: center; }
+    .site-branding .site-info .site-title {
+      margin: 0; }
     .site-branding .site-info .site-title a {
       font-family: "Times New Roman", Times, serif;
       color: #fff;
@@ -749,8 +751,7 @@ body {
     .site-branding .site-info .site-description {
       font-family: LTZapfino One;
       font-size: 50px;
-      margin-top: 20px;
-      margin-bottom: 10px; }
+      margin: 0; }
   .site-branding .site-logo {
     width: 150px;
     float: left;
