@@ -175,6 +175,15 @@
 			height: 35px; 
 			margin-right: 10px; 
 			margin-top: -10px; 
+			line-height: 1.1;
+		}
+		a{
+			color: #fff; 
+			&:hover,
+			&:active,
+			&:focus{
+				text-decoration: none; 
+			}
 		}
 	}
 

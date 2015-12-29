@@ -856,7 +856,12 @@ body, html {
     font-size: 50px;
     height: 35px;
     margin-right: 10px;
-    margin-top: -10px; }
+    margin-top: -10px;
+    line-height: 1.1; }
+  .learn-more a {
+    color: #fff; }
+    .learn-more a:hover, .learn-more a:active, .learn-more a:focus {
+      text-decoration: none; }
 
 #secondary {
   background-color: rgba(158, 189, 212, 0.7);
