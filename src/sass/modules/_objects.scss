@@ -253,3 +253,13 @@
 		padding-bottom: 5px; 
 		@include rounded(3px); 
 	}
+
+	%obj-links{
+		color: $col-primary;
+		@include transition(all .3s ease);
+		&:hover,
+		&:active,
+		&:focus{
+			color: $col-secondary; 
+		}
+	}
