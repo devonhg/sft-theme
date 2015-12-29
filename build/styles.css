@@ -535,6 +535,9 @@ Usage
 /********************
 * Rounded
 ********************/
+/*
+	20 = 12
+*/
 body input[type="submit"], #secondary input[type="submit"],
 body input[type="reset"],
 #secondary input[type="reset"],
@@ -549,36 +552,28 @@ body button:hover,
   background-color: #5f3895;
   padding: 5px;
   color: #fff;
-  font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 12px; }
 
 body, #secondary {
-  font-size: 20px; }
+  font-size: 12px; }
   body h1, #secondary h1 {
-    font-size: 40px;
-    font-size: 2.5rem; }
+    font-size: 25px; }
   body h2, #secondary h2 {
-    font-size: 36px;
-    font-size: 2.25rem; }
+    font-size: 22.5px; }
   body h3, #secondary h3 {
-    font-size: 28px;
-    font-size: 1.75rem; }
+    font-size: 17.5px; }
   body h4, #secondary h4 {
-    font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 12px; }
   body h5, #secondary h5 {
-    font-size: 16px;
-    font-size: 1rem; }
+    font-size: 10px; }
   body h6, #secondary h6 {
-    font-size: 14px;
-    font-size: 0.875rem; }
+    font-size: 8.75px; }
   body h1, #secondary h1, body h2, #secondary h2, body h3, #secondary h3,
   body h4,
   #secondary h4, body h5, #secondary h5, body h6, #secondary h6 {
     font-family: "Times New Roman", Times, serif; }
   body p, #secondary p {
-    font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 12px; }
 
 .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer, #primary {
   -webkit-border-radius: 4px;
@@ -587,8 +582,12 @@ body, #secondary {
   .scroll-link .wp-post-image, .site-branding .wp-post-image, .learn-more .wp-post-image, #secondary .wp-post-image, .sidebar-footer .wp-post-image, #primary .wp-post-image {
     margin-bottom: 15px; }
   .scroll-link .entry-title, .site-branding .entry-title, .learn-more .entry-title, #secondary .entry-title, .sidebar-footer .entry-title, #primary .entry-title {
-    font-size: 60px;
-    font-size: 3.75rem; }
+    font-size: 36px; }
+  @media only screen and (max-width: 40em) {
+    .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer, #primary {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0; } }
 
 .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer {
   background-color: #5f3895;
@@ -611,11 +610,6 @@ body, #secondary {
   border-radius: 3px; }
   #primary a {
     color: #017ed8; }
-  @media only screen and (max-width: 40em) {
-    #primary {
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0; } }
 
 .scroll-link, .site-branding, .learn-more, #secondary, .sidebar-footer, #primary {
   padding: 15px; }
@@ -748,14 +742,12 @@ body {
     .site-branding .site-info .site-title a {
       font-family: "Times New Roman", Times, serif;
       color: #fff;
-      font-size: 80px;
-      font-size: 5rem; }
+      font-size: 50px; }
       .site-branding .site-info .site-title a:hover, .site-branding .site-info .site-title a:active {
         text-decoration: none; }
     .site-branding .site-info .site-description {
       font-family: LTZapfino One;
-      font-size: 80px;
-      font-size: 5rem; }
+      font-size: 50px; }
   .site-branding .site-logo {
     width: 150px;
     float: left;
@@ -779,11 +771,9 @@ body {
         margin-left: 0;
         margin-right: 0; }
         .site-branding .site-info .site-title a {
-          font-size: 60px;
-          font-size: 3.75rem; }
+          font-size: 37.5px; }
         .site-branding .site-info .site-description {
-          font-size: 40px;
-          font-size: 2.5rem; } }
+          font-size: 25px; } }
 
 #site-navigation {
   margin: 0 auto;
@@ -797,8 +787,7 @@ body {
       padding: 8px 12px;
       font-family: "Times New Roman", Times, serif;
       text-transform: uppercase;
-      font-size: 28px;
-      font-size: 1.75rem; }
+      font-size: 17.5px; }
       #site-navigation .menu-main-menu-container li a {
         display: inline-block;
         color: #000;
@@ -813,8 +802,7 @@ body {
   #site-navigation button {
     padding: 15px;
     width: 100%;
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 18.75px;
     text-transform: uppercase;
     background-color: #017ed8;
     color: #fff; }
@@ -854,8 +842,7 @@ body {
   .learn-more h1 {
     margin: 0px;
     font-family: LTZapfino One;
-    font-size: 80px;
-    font-size: 5rem;
+    font-size: 50px;
     height: 35px;
     margin-right: 10px;
     margin-top: -10px; }
@@ -886,8 +873,7 @@ body {
   margin-right: auto; }
   .sidebar-footer h1 {
     font-family: "Trajan Pro bold";
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 16.25px;
     text-transform: uppercase; }
   .sidebar-footer:after {
     content: " ";
