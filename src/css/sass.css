@@ -874,6 +874,8 @@ html {
   box-sizing: border-box;
   border-radius: 0;
   text-align: center; }
+.search-form input.search-field {
+  text-align: left; }
 
 #primary .entry-title {
   font-style: italic;
